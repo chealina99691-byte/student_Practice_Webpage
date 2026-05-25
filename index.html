@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Practice Webpage</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Student Practice Webpage</h1>
+    <p>HTML + CSS Practice (Forms + Table Advanced)</p>
+  </header>
+
+  <main class="container">
+
+    <!-- IMAGE SECTION : normal rectangle image -->
+    <section class="card">
+      <h2 class="section-title">Image Section</h2>
+      <img src="https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain" alt="Scenic nature" />
+    </section>
+
+    <!-- IMAGE CIRCLE : same image but shown as a circle -->
+    <section class="card">
+      <h2 class="section-title">Image Circle</h2>
+      <img src="https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain" alt="Scenic nature circle" class="img-circle" />
+    </section>
+
+    <!-- IMAGE OVAL : same image but shown as an oval -->
+    <section class="card">
+      <h2 class="section-title">Image Oval</h2>
+      <img src="https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain" alt="Scenic nature oval" class="img-oval" />
+    </section>
+
+    <!-- ADVANCED TABLE : table with rowspan and colspan -->
+    <section class="card">
+      <h2 class="section-title">Advanced Table</h2>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+          <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Scores</th>
+            <th rowspan="2">Grade</th>
+          </tr>
+          <tr>
+            <th>Math</th>
+            <th>CS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>90</td>
+            <td>95</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>80</td>
+            <td>85</td>
+            <td>B</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FORM 1 : Basic Info form -->
+    <section class="card">
+      <h2 class="form-title">Form 1: Basic Info</h2>
+
+      <!-- form-inner keeps the fields centered inside the white card -->
+      <div class="form-inner">
+
+        <div class="form-group">
+          <label for="name">Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password <span class="required">*</span></label>
+          <input type="password" id="password" name="password" />
+        </div>
+
+        <div class="form-group">
+          <label for="file">Upload File</label>
+          <input type="file" id="file" name="file" class="file-input" />
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset"  class="btn btn-secondary">Reset</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORM 2 : Survey Form -->
+    <section class="card">
+      <h2 class="form-title">Form 2: Survey Form</h2>
+
+      <!-- form-inner keeps the fields centered inside the white card -->
+      <div class="form-inner">
+
+        <div class="form-group">
+          <label for="course">Choose Course <span class="required">*</span></label>
+          <select id="course" name="course">
+            <option value="">-- Select --</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label class="inline-label">
+              <input type="radio" name="gender" value="male" /> Male
+            </label>
+            <label class="inline-label">
+              <input type="radio" name="gender" value="female" /> Female
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Skills</label>
+          <div class="checkbox-group">
+            <label class="inline-label"><input type="checkbox" name="skills" value="html" /> HTML</label>
+            <label class="inline-label"><input type="checkbox" name="skills" value="css"  /> CSS</label>
+            <label class="inline-label"><input type="checkbox" name="skills" value="javascript"   /> JavaScript</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone <span class="required">*</span></label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
